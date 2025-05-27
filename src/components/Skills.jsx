@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../styles/Skills.css';
 const skills = [
     'JavaScript',
     'React',
@@ -12,7 +12,7 @@ const skills = [
 ];
 
 const Skills = () => (
-    <section>
+    <section className="skills-container">
         <h2>Skills</h2>
         <ul>
             {skills.map((skill, idx) => (

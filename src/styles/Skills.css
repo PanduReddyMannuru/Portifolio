@@ -1,0 +1,42 @@
+.skills-container {
+  max-width: 700px;
+  margin: 60px auto 0 auto;
+  padding: 32px 28px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(34,34,59,0.07);
+}
+
+.skills-container h2 {
+  font-size: 2rem;
+  color: #22223b;
+  margin-bottom: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.skills-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-container li {
+  background: #f2f2fa;
+  color: #22223b;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(34,34,59,0.05);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.skills-container li:hover {
+  background: #4a4e69;
+  color: #fff;
+  transform: translateY(-2px) scale(1.05);
+}

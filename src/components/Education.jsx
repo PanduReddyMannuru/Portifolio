@@ -1,6 +1,7 @@
+import '../styles/Education.css';
 const Education = () => {
     return (
-        <div>
+        <div className="education-container">
             <h2>Education</h2>
             <ul>
                 <li>

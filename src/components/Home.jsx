@@ -14,7 +14,7 @@ const Home = () => {
           <i className="fab fa-github"></i>
         </a>
       </div>
-      <a href="" download className='Resume-button'>Resume</a>
+      <a href="/23BQ5A4208.pdf" download="PanduReddy_Resume" className='Resume-button'>Resume</a>
     </div>
   )
 }

@@ -1,3 +1,25 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  padding-top: 90px; /* Adjust this value to match your header height */
+  padding-bottom: 70px; /* To prevent footer overlap, adjust to your footer height */
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding:0;   /* Reduced padding */
+  background: #fff;
+  color: #22223b;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-top: 1px solid #ececec;
+  box-shadow: 0 -2px 12px rgba(34,34,59,0.03);
+  z-index: 99;
+}

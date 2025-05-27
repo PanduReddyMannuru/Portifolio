@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Projects.css';
 
 const projects = [
     {
@@ -19,7 +20,7 @@ const projects = [
 ];
 
 const Projects = () => (
-    <section>
+    <section className="projects-container">
         <h2>Projects</h2>
         <ul>
             {projects.map((project, idx) => (

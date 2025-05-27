@@ -1,18 +1,90 @@
-nav{
-    margin-top: 30px;
-}
-nav ul{
-    display: flex;
-    list-style: none;
-    padding: 0px 200px;
-    margin: 0;
-    gap:54px;
-    justify-content: right;
-
-
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(34, 34, 59, 0.06);
+  padding: 18px 0;
 }
 
-nav li{
-    font-weight:bold;
-    cursor: pointer;
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 48px;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+}
+
+/* Style for nav buttons to look like links */
+nav ul button {
+  background: none;
+  border: none;
+  color: #22223b;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 16px;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.2s;
+}
+
+nav ul button:hover,
+nav ul button:focus {
+  color: #4a4e69;
+  background: #f2f2fa;
+}
+
+nav li {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+nav a {
+  color: #22223b;
+  text-decoration: none;
+  transition: color 0.2s, border-bottom 0.2s;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #4a4e69;
+  border-bottom: 2px solid #4a4e69;
+}
+
+.resume-button {
+  margin-left: 32px;
+  padding: 8px 22px;
+  background: linear-gradient(90deg, #22223b 60%, #4a4e69 100%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(34, 34, 59, 0.08);
+  transition: background 0.2s, transform 0.2s, color 0.2s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.resume-button:hover {
+  background: linear-gradient(90deg, #4a4e69 60%, #22223b 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
 }
