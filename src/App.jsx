@@ -5,6 +5,7 @@ import Home from './components/Home.jsx'
 import Education from './components/Education.jsx'
 import Skills from './components/Skills.jsx'
 import Projects from './components/Projects.jsx'
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home')
@@ -19,6 +20,7 @@ const App = () => {
       <footer>
         <p>© 2025 PanduReddyMannuru.</p>
       </footer>
+      <SpeedInsights />
     </>
   )
 }
