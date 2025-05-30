@@ -22,32 +22,12 @@ const Header = ({ onNavClick }) => {
             <button onClick={() => { onNavClick('home'); setMenuOpen(false); }}>Home</button>
           </li>
           <li>
-            <button onClick={() => { onNavClick('education'); setMenuOpen(false); }}>Education</button>
-          </li>
-          <li>
-            <button onClick={() => { onNavClick('skills'); setMenuOpen(false); }}>Skills</button>
+            <button onClick={() => { onNavClick('about'); setMenuOpen(false); }}>About</button>
           </li>
           <li>
             <button onClick={() => { onNavClick('projects'); setMenuOpen(false); }}>Projects</button>
           </li>
-          <li className="mobile-resume">
-            <a
-              href="/23BQ5A4208.pdf"
-              download="PanduReddy_Resume"
-              className="resume-button"
-              onClick={() => setMenuOpen(false)}
-            >
-              Resume
-            </a>
-          </li>
         </ul>
-        <a
-          href="/23BQ5A4208.pdf"
-          download="PanduReddy_Resume"
-          className="resume-button desktop-resume"
-        >
-          Resume
-        </a>
       </div>
     </nav>
   )

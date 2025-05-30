@@ -67,29 +67,6 @@ nav a:focus {
   color: #4a4e69;
   border-bottom: 2px solid #4a4e69;
 }
-
-.resume-button {
-  margin-left: 32px;
-  padding: 8px 22px;
-  background: linear-gradient(90deg, #22223b 60%, #4a4e69 100%);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  box-shadow: 0 2px 8px rgba(34, 34, 59, 0.08);
-  transition: background 0.2s, transform 0.2s, color 0.2s;
-  cursor: pointer;
-  display: inline-block;
-}
-
-.resume-button:hover {
-  background: linear-gradient(90deg, #4a4e69 60%, #22223b 100%);
-  color: #fff;
-  transform: translateY(-2px) scale(1.04);
-}
-
 /* Hamburger styles */
 .hamburger {
   display: none;
@@ -142,20 +119,5 @@ nav a:focus {
   nav ul li {
     width: 100%;
     padding: 12px 24px;
-  }
-  .resume-button {
-    margin-left: 0;
-    margin-top: 12px;
-    width: 90%;
-    max-width: 200px;
-    display: block;
-  }
-  .desktop-resume {
-    display: none;
-  }
-  .mobile-resume {
-    display: block;
-    width: 100%;
-    margin-top: 8px;
   }
 }
