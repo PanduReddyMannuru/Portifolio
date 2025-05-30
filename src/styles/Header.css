@@ -1,12 +1,19 @@
 nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60vw;
+  max-width: 600px;
   z-index: 100;
-  background: #fff;
-  box-shadow: 0 2px 12px rgba(34, 34, 59, 0.06);
-  padding: 18px 0;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  padding: 14px 0;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .nav-content {
@@ -28,9 +35,10 @@ nav ul {
   padding: 0;
   flex: 1;
   justify-content: center;
+  background: transparent;
+  box-shadow: none;
 }
 
-/* Style for nav buttons to look like links */
 nav ul button {
   background: none;
   border: none;
@@ -46,7 +54,7 @@ nav ul button {
 nav ul button:hover,
 nav ul button:focus {
   color: #4a4e69;
-  background: #f2f2fa;
+  background: rgba(255,255,255,0.4);
 }
 
 nav li {
@@ -67,57 +75,34 @@ nav a:focus {
   color: #4a4e69;
   border-bottom: 2px solid #4a4e69;
 }
-/* Hamburger styles */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  width: 32px;
-  height: 32px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 101;
-}
 
-.hamburger span {
-  display: block;
-  height: 4px;
-  width: 100%;
-  background: #22223b;
-  border-radius: 2px;
-  transition: 0.3s;
-}
-
-/* Responsive nav */
+/* Responsive nav for mobile */
 @media (max-width: 800px) {
-  .hamburger {
-    display: flex;
+  nav {
+    top: 12px;
+    width: 96vw;
+    padding: 2px 0;
+    border-radius: 14px;
   }
   .nav-content {
-    padding: 0 16px;
+    padding: 0 8px;
   }
   nav ul {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background: #fff;
-    flex-direction: column;
-    align-items: flex-start;
     gap: 0;
-    padding: 16px 0;
+    padding: 0;
     margin: 0;
-    display: none;
-    box-shadow: 0 4px 24px rgba(34,34,59,0.08);
-    z-index: 100;
-  }
-  nav ul.open {
-    display: flex;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 0;
   }
   nav ul li {
     width: 100%;
-    padding: 12px 24px;
+    padding: 8px 0; /* Reduce horizontal padding */
+    text-align: center;
+  }
+  nav ul button {
+    font-size: 1rem; /* Slightly smaller font */
+    padding: 6px 8px; /* Reduce button padding */
   }
 }
+

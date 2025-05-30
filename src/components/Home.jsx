@@ -7,7 +7,7 @@ const Home = () => {
       <div className='home-container'>
         <div className="home-content-with-image">
           <div className="home-content">
-            <h3>Hi, i'm Pandu Reddy</h3>
+            <h3>Hello, i'm Pandu Reddy</h3>
             <p>
               a passionate developer focused on creating modern and responsive web experiences. I specialize in React, JavaScript, and UI/UX design, turning ideas into elegant digital products. Feel free to explore my projects and connect with me — let’s build something great together!
             </p>

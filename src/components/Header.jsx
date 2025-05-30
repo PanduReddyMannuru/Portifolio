@@ -1,31 +1,22 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../styles/Header.css'
 
 const Header = ({ onNavClick }) => {
-  const [menuOpen, setMenuOpen] = useState(false)
-
   return (
     <nav>
       <div className="nav-content">
-        <div className="nav-spacer" />
-        <button
-          className="hamburger"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle navigation"
-        >
-          <span />
-          <span />
-          <span />
-        </button>
-        <ul className={menuOpen ? 'open' : ''}>
+        <ul>
           <li>
-            <button onClick={() => { onNavClick('home'); setMenuOpen(false); }}>Home</button>
+            <button onClick={() => onNavClick('home')}>Home</button>
           </li>
           <li>
-            <button onClick={() => { onNavClick('about'); setMenuOpen(false); }}>About</button>
+            <button onClick={() => onNavClick('about')}>About</button>
           </li>
           <li>
-            <button onClick={() => { onNavClick('projects'); setMenuOpen(false); }}>Projects</button>
+            <button onClick={() => onNavClick('projects')}>Projects</button>
+          </li>
+          <li>
+            <button onClick={() => onNavClick('contact')}>Connect</button>
           </li>
         </ul>
       </div>
@@ -33,4 +24,4 @@ const Header = ({ onNavClick }) => {
   )
 }
 
-export default Header
+export default Header;
