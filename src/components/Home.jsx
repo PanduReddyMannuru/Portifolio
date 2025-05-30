@@ -19,7 +19,7 @@ const Home = () => {
                 <i className="fab fa-github"></i>
               </a>
             </div>
-            <a href="/23BQ5A4208.pdf" download="PanduReddy_Resume.pdf" className='Resume-button'>Resume</a>
+            <a href="/23BQ5A4208.pdf" download="PanduReddy_Resume.pdf" className='Resume-button'>View Resume</a>
           </div>
           <img src="/PanduReddy.jpg" alt="Pandu Reddy" className="profile-image" />
         </div>

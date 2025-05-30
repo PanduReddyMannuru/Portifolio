@@ -11,7 +11,7 @@ const App = () => {
   const [activeSection, setActiveSection] = useState('home')
 
   return (
-    <>
+    <div className="main-container">
       <Header onNavClick={setActiveSection} />
       {activeSection === 'home' && <Home />}
       {activeSection === 'about' && <About />}
@@ -21,7 +21,7 @@ const App = () => {
         <p>© 2025 PanduReddyMannuru.</p>
       </footer>
       <SpeedInsights />
-    </>
+    </div>
   )
 }
 
