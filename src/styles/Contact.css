@@ -50,7 +50,7 @@
 
 .contact-section button {
   align-self: flex-start;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   background: #22223b;      /* Changed to match resume button color */
   color: #f2e9e4;           /* Changed to match resume button text color */
   border: none;
