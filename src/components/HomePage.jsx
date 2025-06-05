@@ -6,7 +6,7 @@ const HomePage = () => (
   <>
     <Home />
     <AboutMe />       
-    <Projects />
+   
   </>
 )
 
