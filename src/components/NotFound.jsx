@@ -9,7 +9,7 @@ const NotFound = () => (
         fontSize: '2rem',
         fontWeight: 'bold'
     }}>
-        Not Found
+        This page is not available. Please click the <i><b>Home</b></i> return to the home page.
     </div>
 );
 
